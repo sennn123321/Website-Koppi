@@ -151,7 +151,7 @@
     <!-- Menu Section end -->
 
     <!-- Products Section start -->
-    <section class="products" id="products">
+    <section class="products" id="products" x-data="produk">
       <h2><span>Produk Unggulan</span> Kami</h2>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo unde eum,
@@ -159,6 +159,7 @@
       </p>
 
       <div class="row">
+        <template x-for="(item, index) in items" x-key="index"></template>
         <div class="product-card">
           <div class="product-icons">
             <a href="#"><i data-feather="shopping-cart"></i></a>
